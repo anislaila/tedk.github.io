@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>
+        TEDK
+    </title>
+    
+<link rel="stylesheet" href="/libs/highlight/styles/monokai-sublime.css">
+
+    
+<link rel="stylesheet" href="/libs/font-awesome/css/font-awesome.min.css">
+
+    
+<link rel="stylesheet" href="/css/style.css">
+
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+<body id="bodyx">
+    <div class="hd posts">
+    <a onclick="history.back()"><i class="fa fa-reply replay-btn" aria-hidden="true"></i></a>
+    
+    <div class="post-title">
+        <p>
+            K.D 3 Membangun OP-AMP
+        </p>
+        <hr>
+    </div>
+    <div class="post-content">
+        <h2 id="OP-AMP"><a href="#OP-AMP" class="headerlink" title="OP AMP"></a>OP AMP</h2><p> OP-AMP atau Operational Amplifier yaitu suatu rangkaian terintegrasi yang berisi beberapa tingkat dan konfigurasi penguat diferensial. Penguat operasional memiliki dua masukan dan satu keluaran serta memiliki penguatan DC yang tinggi. Untuk dapat bekerja dengan baik, penguat operasional memerlukan tegangan catu yang simetris yaitu tegangan yang berharga positif (+V) dan tegangan yang berharga negatif (-V) terhadap tanah (ground).<br> Beberapa rangkaian lup tertutup op-amp yang umum digunakan:</p>
+<h3 id="1-OP-AMP-Sebagai-penguat-non-inverting"><a href="#1-OP-AMP-Sebagai-penguat-non-inverting" class="headerlink" title="1. OP-AMP Sebagai penguat non inverting"></a>1. <a href="/Y/C1">OP-AMP Sebagai penguat non inverting</a></h3><h3 id="2-OP-AMP-Sebagai-penguat-inverting"><a href="#2-OP-AMP-Sebagai-penguat-inverting" class="headerlink" title="2. OP-AMP Sebagai penguat inverting"></a>2. <a href="/Y/C2">OP-AMP Sebagai penguat inverting</a></h3><h3 id="3-OP-AMP-Sebagai-integrator"><a href="#3-OP-AMP-Sebagai-integrator" class="headerlink" title="3. OP-AMP Sebagai integrator"></a>3. <a href="/Y/C3">OP-AMP Sebagai integrator</a></h3><h3 id="4-OP-AMP-Sebagai-differensiator"><a href="#4-OP-AMP-Sebagai-differensiator" class="headerlink" title="4. OP-AMP Sebagai differensiator"></a>4. <a href="/Y/C4">OP-AMP Sebagai differensiator</a></h3><h3 id="5-OP-AMP-Sebagai-comparator"><a href="#5-OP-AMP-Sebagai-comparator" class="headerlink" title="5. OP-AMP Sebagai comparator"></a>5. <a href="/Y/C6">OP-AMP Sebagai comparator</a></h3><h3 id="6-Rangkaian-OP-AMP"><a href="#6-Rangkaian-OP-AMP" class="headerlink" title="6. Rangkaian OP-AMP"></a>6. <a href="/Y/C7">Rangkaian OP-AMP</a></h3><p><img src="/images/opamp.png" alt="andgate"></p>
+<ul>
+<li>Terminal-terminal luar di samping power supply ( ±Vcc)<br>adalah dua input vi1 dan vi2 serta terminal keluran v out.</li>
+<li>Aplikasi op-amp yang paling sering dipakai antara lain adalah rangkaian inverter, non-inverter, integrator dan differensiator.</li>
+</ul>
+<h3 id="Karakteristik-OP-AMP"><a href="#Karakteristik-OP-AMP" class="headerlink" title="Karakteristik OP-AMP"></a>Karakteristik OP-AMP</h3><ol>
+<li>Impedansi ( Ukuran Resistansi pada sumber arus bolak-balik) masukan yang tak terhingga (Z in = 0 “Nol”)  Penguat yang ideal diharapkan tidak menarik arus masukan, artinya tidak ada arus yang masuk kedalam terminal 1 maupun 2 ( I1 =I2 = 0)</li>
+<li>Impedansi ( Ukuran Resistansi pada sumber arus bolak-balik) Keluaran atau Zout = 0 (nol) Terminal 3 merupakan keluaran penguat operasional, idealnya diharapkan bertindak sebagai terminal keluaran sebuah sumber sumber tegangan ideal. Tegangan antara terminal 3 dengan ground akan selalu sama dengan A (V2 . V1 ), dim</li>
+<li>Penguatan Tegangan Open-loop atau Av = ∞ (tak terhingga) Apabila dioperasikan<br>pada loop terbuka ( tidak ada umpan balik dari keluaran ke<br>masukan ), maka sebuah penguat opersaional ideal mempnyai<br>gain (penguatan) yang besarnya tak terhingga.</li>
+<li>Tegangan Offset Keluaran (Output Offset Voltage) atau Voo = 0 (nol) </li>
+<li>Lebar Pita (Bandwidth) atau BW = ∞ (tak terhingga)</li>
+<li>Karakteristik tidak berubah dengan suhu</li>
+</ol>
+<p><img src="/images/parameter.png" alt="tujuh"></p>
+<h3 id="CONTOH-SOAL"><a href="#CONTOH-SOAL" class="headerlink" title="CONTOH SOAL"></a><a href="/Y/C5">CONTOH SOAL</a></h3>
+    </div>
+
+    
+        <hr class="fhr">
+    
+</div>
+    <div class="footer" id="footer">
+    <p>Copyright © 2020 <a class="flink" target="_blank" rel="noopener" href="https://hexo.io">Hexo</a>-<a class="flink" target="_blank" rel="noopener" href="https://github.com/sanjinhub/hexo-theme-geek">Geek</a>.
+        <label class="el-switch el-switch-green el-switch-sm" style="vertical-align: sub;">
+            <input type="checkbox" name="switch" id="update_style">
+            <span class="el-switch-style"></span>
+        </label>
+<!--         <script type="text/javascript">
+        var cnzz_protocol = (("https:" == document.location.protocol) ? "https://" : "http://");
+        document.write(unescape("%3Cspan id='cnzz_stat_icon_1278548644'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "v1.cnzz.com/stat.php%3Fid%3D1278548644%26show%3Dpic1' type='text/javascript'%3E%3C/script%3E"));
+        </script> -->
+    </p>
+</div>
+<input type="hidden" id="web_style" value="black">
+<input type="hidden" id="valine_appid" value="CmCti21ooOOIzFOhEyFkFvR0-gzGzoHsz">
+<input type="hidden" id="valine_appKey" value="FqiyUqbg7McKN2eG0MCewupf">
+
+<script src="/libs/jquery.min.js"></script>
+
+
+<script src="/libs/highlight/highlight.pack.js"></script>
+
+<script src='//cdn.jsdelivr.net/npm/valine@1.3.10/dist/Valine.min.js'></script>
+
+<script src="/js/js.js"></script>
+
+<style type="text/css">
+.v * {
+    color: #698fca;
+}
+
+.v .vlist .vcard .vhead .vsys {
+    color: #3a3e4a;
+}
+
+.v .vlist .vcard .vh .vmeta .vat {
+    color: #638fd5;
+}
+
+.v .vlist .vcard .vhead .vnick {
+    color: #6ba1ff;
+}
+
+.v a {
+    color: #8696b1;
+}
+
+.v .vlist .vcard .vhead .vnick:hover {
+    color: #669bfc;
+}
+</style>
+</body>
+
+</html>

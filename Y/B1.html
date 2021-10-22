@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>
+        TEDK
+    </title>
+    
+<link rel="stylesheet" href="/libs/highlight/styles/monokai-sublime.css">
+
+    
+<link rel="stylesheet" href="/libs/font-awesome/css/font-awesome.min.css">
+
+    
+<link rel="stylesheet" href="/css/style.css">
+
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+<body id="bodyx">
+    <div class="hd posts">
+    <a onclick="history.back()"><i class="fa fa-reply replay-btn" aria-hidden="true"></i></a>
+    
+    <div class="post-title">
+        <p>
+            Operasi Kerja
+        </p>
+        <hr>
+    </div>
+    <div class="post-content">
+        <p>OPERASI KERJA PENGUAT DAYA </p>
+<h2 id="Operasi-Penguat-Daya-kelas-A"><a href="#Operasi-Penguat-Daya-kelas-A" class="headerlink" title="Operasi Penguat Daya kelas A"></a>Operasi Penguat Daya kelas A</h2><p> Operasi penguat/amplifier yang paling umum dan dan desainnya sederhana. Penguat A merupakan penguat terbaik terutama karena pada tingkat distrosi sinyal rendah.<br> Penguat kelas A memiliki linieritas tertinggi di atas kelas penguat lainnya dan karena itu beroperasi di bagian linier kurva karakteristik.</p>
+<p>Umumnya penguat kelas A menggunakan transistor tunggal yang sama (Bipolar, FET, MOSFET, dll) yang terhubung dalam konfigurasi common emitter untuk kedua bagian gelombang dengan transistor selalu memiliki arus yang mengalir melalui itu, bahkan jika tidak memiliki sinyal dasar. Tingat effisiensi dari sebuah penguat dipengaruhi oleh konfigurasinya. Jika sebuah penguat menguatkan sepenuhnya sinyal input maka sinyal keluaran akan besar namun tingkat efisiensinya rendah. Penguat akan bekerja secara kontinyu dan menimbulkan rugi rugi berupa panas.<br><img src="/images/rumusefensiensiop.png" alt="andgate"></p>
+<p>Keterangan :</p>
+<ul>
+<li>η%  adalah Effisiensi dari Amplifier </li>
+<li>Pout  Daya output yang diumpankan ke beban</li>
+<li>Pdc  Adalah daya Dc dari sumber tegangan<br><img src="/images/kelasA.gif" alt="tujuh"></li>
+</ul>
+<p>Untuk memperoleh linearitas dan gain yang tinggi maka tahap output dari kelas A bias ON melakukan setiap waktu.  Kemudian untuk penguat yang diklasifikasikan sebagai “Penguat Kelas A”, arus idle sinyal nol pada tahap output harus sama atau lebih besar dari arus beban maksimum (biasanya speaker) yang diperlukan untuk menghasilkan sinyal output terbesar.</p>
+<p>Sebagai penguat kelas A beroperasi di bagian linier kurva karakteristiknya, perangkat output tunggal melakukan melalui 360 derajat penuh dari bentuk gelombang output. Kemudian penguat kelas A setara dengan sumber arus.</p>
+<p>Karena penguat kelas A beroperasi di daerah linier, tegangan bias base DC (atau gerbang) DC harus dipilih dengan benar untuk memastikan operasi yang benar dan distorsi rendah. Namun, karena perangkat output “ON” setiap saat, itu selalu membawa arus, yang merupakan kehilangan daya terus menerus dalam penguat.</p>
+<p>Karena kehilangan kelas daya yang terus-menerus ini, penguat kelas A menghasilkan panas yang luar biasa yang menambah efisiensinya yang sangat rendah, sekitar 30%, menjadikannya tidak praktis untuk penguatan daya tinggi.</p>
+<h2 id="Operasi-Penguat-Daya-kelas-B"><a href="#Operasi-Penguat-Daya-kelas-B" class="headerlink" title="Operasi Penguat Daya kelas B"></a>Operasi Penguat Daya kelas B</h2><p>Konsep penguat daya kelas B</p>
+<ul>
+<li>Memiliki efesiensi lebih besar dibandingkan kelas A</li>
+<li>Kelinieritasannya tidak sebaik penguat kelas A</li>
+<li>Operasi kerjanya umumnya bersifat <em>push full</em> (sirkuit arus listrik yang dapat menggerakkan baik arus positif atau negatif kepada beban.)<br>Amplifier push-pull menggunakan dua transistor “komplementer” atau Matching, satu tipe NPN dan yang lainnya adalah tipe PNP dengan kedua transistor daya menerima sinyal input yang bersamaan, tetapi dalam fase yang berlawanan satu sama lain. Satu transistor hanya memperkuat  setengah atau 180 derajat dari siklus bentuk gelombang input,  sementara transistor lainnya memperkuat setengah lainnya atau  180 derajat dari siklus bentuk gelombang input. Dari kedua hasil gelombang tersebut kemudian disatukan kembali pada bagian output.</li>
+</ul>
+<p>Sudut konduksi untuk jenis rangkiaan amplifier ini hanya 180 derajat atau 50% dari sinyal input. Efek Push (mendorong) dan Pull (menarik) dari siklus setengah bergantian oleh transistor.<br><img src="/images/penguatkelasB.gif" alt="tujuh"></p>
+<p>Rangkaian di atas menunjukkan Rangkaian Penguat Kelas B standar yang menggunakan Transformator Center-Tap (disadap-tengah) yang seimbang, yang membagi sinyal gelombang yang masuk menjadi dua bagian yang sama dan yang 180° keluar fasa satu sama lain.</p>
+<p>Trafo CT lain pada output digunakan untuk menggabungkan kembali kedua sinyal yang memberikan daya yang meningkat untuk beban.<br>Transistor yang digunakan untuk jenis rangkaian penguat trafo push-pull ini adalah transistor NPN dengan terminal emitter-nya terhubung bersama. Di sini, arus beban dibagi antara dua perangkat transistor daya karena berkurang dalam satu perangkat dan meningkat di perangkat lain sepanjang siklus sinyal mengurangi tegangan output dan arus ke nol.</p>
+<p>Hasilnya adalah bahwa kedua bagian gelombang output sekarang berayun dari nol menjadi dua kali arus diam sehingga mengurangi disipasi. Ini memiliki efek hampir dua kali lipat efisiensi penguat menjadi sekitar 70%. Dengan asumsi bahwa tidak ada sinyal input, maka masing-masing transistor membawa arus collector diam normal, nilai yang ditentukan oleh bias base yang berada pada titik cut-off. </p>
+<h4 id="Efesiensi-Penguat-Kelas-B"><a href="#Efesiensi-Penguat-Kelas-B" class="headerlink" title="Efesiensi Penguat Kelas B"></a>Efesiensi Penguat Kelas B</h4><p> Tidak akan menguatkan sinyal, saat tidak ada sinyal input sehingga efisiensinya lebih bagus dari pada penguat kelas A. Disipasi Panas Pada output juga dapat dikurangi.Tingkat efisiensi konversi keseluruhan ( η) amplifier lebih besar daripada Kelas A yang setara dengan efisiensi mencapai setinggi 70%. Efisiensi ini dihasilkan hampir semua jenis push pull penguat kelas B Penguat Kelas B banyak digunakan untuk rangkaian power amplifier daya menengah, karena lebih andal, tahan panas, dan konsumsi daya yang lebih rendah. </p>
+<h2 id="Operasi-Penguat-Daya-AB"><a href="#Operasi-Penguat-Daya-AB" class="headerlink" title="Operasi Penguat Daya AB"></a>Operasi Penguat Daya AB</h2><p>Tujuan dibuat Amplifier kelas AB yaitu untuk membentuk penguat sinyal yang tidak cacat (distorsi) dari penguat kelas A dan untuk mendapatkan efisiensi daya yang lebih baik seperti pada amplifier kelas B. Karena amplifier kelas A memiliki efisiensi daya yang rendah (±25%) yang disebaban titik kerja berada di 1/2 VCC tetapi memiliki kualitas sinyal yang terbaik. Sedangkan amplifier kelas B memiliki efisiensi daya yang baik (±85%) karena titik kerja mendekati VCC tetapi kualitas suara yang kurang baik. Sehingga dibuat amplifier kelas AB yang memiliki efisiensi daya penguatan sinyal (±60%) dengan kualitas sinyal audio yang baik.</p>
+<p>Read more at: <a target="_blank" rel="noopener" href="https://elektronika-dasar.web.id/power-amplifier-kelas-ab/">https://elektronika-dasar.web.id/power-amplifier-kelas-ab/</a><br>Copyright © Elektronika Dasar</p>
+<h2 id="Operasi-Penguat-Daya-kelas-C"><a href="#Operasi-Penguat-Daya-kelas-C" class="headerlink" title="Operasi Penguat Daya kelas C"></a>Operasi Penguat Daya kelas C</h2><p>Power amplifier kelas C hanya membutuhkan 1 transistor penguat untuk dapat bekerja dengan baik, tidak seperti pada penguat kelas B yang membutuhkan 2 transistor untuk bekerja dengan baik. Power amplifier kelas C memang didesain khusus untuk menguatkan sinyal hanya 1 fasa positif saja. Ada beberapa aplikasi yang memang hanya memerlukan 1 fasa positif saja. Contohnya adalah pendeteksi dan penguat frekuensi pilot, rangkaian penguat tuner RF dan sebagainya.<br><img src="/images/rangkaiankelasC.jpg" alt="tujuh"></p>
+<p>Rangkaian power amplifier kelas C tidak perlu dibuat bias, karena transistor memang sengaja dibuat bekerja pada daerah saturasi. Rangkaian L C pada rangkaian tersebut akan beresonansi dan ikut berperan penting dalam mereplika kembali sinyal input menjadi sinyal output dengan frekuensi yang sama. Rangkaian ini jika diberi umpan balik dapat menjadi rangkaian osilator RF yang sering digunakan pada pemancar. Power amplifier kelas C memiliki efisiensi yang tinggi bahkan sampai 100%, namun tingkat fidelitasnya memang lebih rendah. Tetapi sebenarnya fidelitas yang tinggi bukan menjadi tujuan dari penguat jenis ini.</p>
+<h4 id="Prinsip-kerja"><a href="#Prinsip-kerja" class="headerlink" title="Prinsip kerja"></a>Prinsip kerja</h4><p>akan mengalir arus di kolektor kurang dari 180° pada setiap siklusnya (tidak sinusoida), ada rangkaian tangki resonansi, LC yang ditunjukkan pada gambar diatas.</p>
+<h4 id="Analisis-Penguat-Daya-Kelas-C"><a href="#Analisis-Penguat-Daya-Kelas-C" class="headerlink" title="Analisis Penguat Daya Kelas C"></a>Analisis Penguat Daya Kelas C</h4><p>Kelebihan Penguat Daya Kelas C</p>
+<ul>
+<li>Efesiensi Daya Tinggi</li>
+<li>Sangat bagus diaplikasikan pada sistem RF</li>
+<li>Memiliki ukuran fisik yang kecil<br>Kekurangan Penguat Daya Kelas C</li>
+<li>kelinieritasnya rendah</li>
+<li>Tidak terlalu cocok untuk aplikasi audio</li>
+<li>Sering menimbulkan gangguan RF</li>
+<li>Cukup sulit mendapatkan induktor dan transformator kopling ideal<br>Pengaplikasian</li>
+<li>Osilator-Osilator RF</li>
+<li>Penguat Daya RF</li>
+<li>Pemancar FM</li>
+<li>Penguat Booster</li>
+<li>Penguat Ulang (Repeater) Frekuensi Tinggi</li>
+<li>Penguat Tertala (Tuned amplifier)</li>
+</ul>
+<p>Read more at: <a target="_blank" rel="noopener" href="https://elektronika-dasar.web.id/power-amplifier-kelas-c/">https://elektronika-dasar.web.id/power-amplifier-kelas-c/</a><br>Copyright © Elektronika Dasar</p>
+
+    </div>
+
+    
+        <hr class="fhr">
+    
+</div>
+    <div class="footer" id="footer">
+    <p>Copyright © 2020 <a class="flink" target="_blank" rel="noopener" href="https://hexo.io">Hexo</a>-<a class="flink" target="_blank" rel="noopener" href="https://github.com/sanjinhub/hexo-theme-geek">Geek</a>.
+        <label class="el-switch el-switch-green el-switch-sm" style="vertical-align: sub;">
+            <input type="checkbox" name="switch" id="update_style">
+            <span class="el-switch-style"></span>
+        </label>
+<!--         <script type="text/javascript">
+        var cnzz_protocol = (("https:" == document.location.protocol) ? "https://" : "http://");
+        document.write(unescape("%3Cspan id='cnzz_stat_icon_1278548644'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "v1.cnzz.com/stat.php%3Fid%3D1278548644%26show%3Dpic1' type='text/javascript'%3E%3C/script%3E"));
+        </script> -->
+    </p>
+</div>
+<input type="hidden" id="web_style" value="black">
+<input type="hidden" id="valine_appid" value="CmCti21ooOOIzFOhEyFkFvR0-gzGzoHsz">
+<input type="hidden" id="valine_appKey" value="FqiyUqbg7McKN2eG0MCewupf">
+
+<script src="/libs/jquery.min.js"></script>
+
+
+<script src="/libs/highlight/highlight.pack.js"></script>
+
+<script src='//cdn.jsdelivr.net/npm/valine@1.3.10/dist/Valine.min.js'></script>
+
+<script src="/js/js.js"></script>
+
+<style type="text/css">
+.v * {
+    color: #698fca;
+}
+
+.v .vlist .vcard .vhead .vsys {
+    color: #3a3e4a;
+}
+
+.v .vlist .vcard .vh .vmeta .vat {
+    color: #638fd5;
+}
+
+.v .vlist .vcard .vhead .vnick {
+    color: #6ba1ff;
+}
+
+.v a {
+    color: #8696b1;
+}
+
+.v .vlist .vcard .vhead .vnick:hover {
+    color: #669bfc;
+}
+</style>
+</body>
+
+</html>

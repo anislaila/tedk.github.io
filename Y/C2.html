@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>
+        TEDK
+    </title>
+    
+<link rel="stylesheet" href="/libs/highlight/styles/monokai-sublime.css">
+
+    
+<link rel="stylesheet" href="/libs/font-awesome/css/font-awesome.min.css">
+
+    
+<link rel="stylesheet" href="/css/style.css">
+
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+<body id="bodyx">
+    <div class="hd posts">
+    <a onclick="history.back()"><i class="fa fa-reply replay-btn" aria-hidden="true"></i></a>
+    
+    <div class="post-title">
+        <p>
+            OP-AMP Sebagai Penguat Non-Inverting
+        </p>
+        <hr>
+    </div>
+    <div class="post-content">
+        <ul>
+<li>Input resistance<br>Ri ≈ ∞</li>
+<li>Output resistance<br>Ro ≈ 0</li>
+<li>Bandwidth:<br><img src="/images/rumusbw.png" alt="andgate"></li>
+</ul>
+<h2 id="Penguat-Penjumlah-Pembalik-Summing-Amplifier-di-Inverting"><a href="#Penguat-Penjumlah-Pembalik-Summing-Amplifier-di-Inverting" class="headerlink" title="Penguat Penjumlah Pembalik (Summing Amplifier di Inverting)"></a>Penguat Penjumlah Pembalik (Summing Amplifier di Inverting)</h2><p><img src="/images/penguatsatuan.png" alt="andgate"><br><img src="/images/rumusvf.png" alt="andgate"></p>
+<p><img src="/images/1.JPG" alt="andgate"><br><img src="/images/2.png" alt="andgate"><br><img src="/images/3.png" alt="andgate"></p>
+<h4 id="Catatan"><a href="#Catatan" class="headerlink" title="Catatan"></a><em>Catatan</em></h4><ul>
+<li>Jika Rin pada masing-masing tegangan nilainya berbeda yaitu Rin pada V1 = R1,<br>Rin paxda V2 = R2 dan Rin pada Vn = Rn dan V1 = V2 =Vn = Vin maka<br>persamaan diatas menjadi:</li>
+</ul>
+<p><img src="/images/4.png" alt="andgate"></p>
+<ul>
+<li>Jika Rin pada masing-masing tegangan nilainya sama yaitu Rin pada V1 = R pada<br>V2 = R pada Vn = R atau (R1 = R2 = Rn = R) dan Vsumber berbeda maka<br>persamaan diatas menjadi:</li>
+</ul>
+<p><img src="/images/5.png" alt="andgate"></p>
+<ul>
+<li><p>Jika Vin = V1 = V2 = Vn , R1≠R2≠Rn maka persamaan untuk summing amplifier<br>adalah:<br><img src="/images/7.png" alt="andgate"></p>
+</li>
+<li><p>Jika Vin = V1 = V2 = Vn dan Rin = R1 = R2 = Rn maka persamaan untuk summing<br>amplifier adalah:</p>
+</li>
+</ul>
+<p><img src="/images/6.png" alt="andgate"></p>
+<ul>
+<li>Penguatan untuk rangkaian summing amplifier diatas adalah:</li>
+</ul>
+<p><img src="/images/8.png" alt="andgate"></p>
+
+    </div>
+
+    
+        <hr class="fhr">
+    
+</div>
+    <div class="footer" id="footer">
+    <p>Copyright © 2020 <a class="flink" target="_blank" rel="noopener" href="https://hexo.io">Hexo</a>-<a class="flink" target="_blank" rel="noopener" href="https://github.com/sanjinhub/hexo-theme-geek">Geek</a>.
+        <label class="el-switch el-switch-green el-switch-sm" style="vertical-align: sub;">
+            <input type="checkbox" name="switch" id="update_style">
+            <span class="el-switch-style"></span>
+        </label>
+<!--         <script type="text/javascript">
+        var cnzz_protocol = (("https:" == document.location.protocol) ? "https://" : "http://");
+        document.write(unescape("%3Cspan id='cnzz_stat_icon_1278548644'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "v1.cnzz.com/stat.php%3Fid%3D1278548644%26show%3Dpic1' type='text/javascript'%3E%3C/script%3E"));
+        </script> -->
+    </p>
+</div>
+<input type="hidden" id="web_style" value="black">
+<input type="hidden" id="valine_appid" value="CmCti21ooOOIzFOhEyFkFvR0-gzGzoHsz">
+<input type="hidden" id="valine_appKey" value="FqiyUqbg7McKN2eG0MCewupf">
+
+<script src="/libs/jquery.min.js"></script>
+
+
+<script src="/libs/highlight/highlight.pack.js"></script>
+
+<script src='//cdn.jsdelivr.net/npm/valine@1.3.10/dist/Valine.min.js'></script>
+
+<script src="/js/js.js"></script>
+
+<style type="text/css">
+.v * {
+    color: #698fca;
+}
+
+.v .vlist .vcard .vhead .vsys {
+    color: #3a3e4a;
+}
+
+.v .vlist .vcard .vh .vmeta .vat {
+    color: #638fd5;
+}
+
+.v .vlist .vcard .vhead .vnick {
+    color: #6ba1ff;
+}
+
+.v a {
+    color: #8696b1;
+}
+
+.v .vlist .vcard .vhead .vnick:hover {
+    color: #669bfc;
+}
+</style>
+</body>
+
+</html>
